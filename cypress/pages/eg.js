@@ -1,5 +1,3 @@
-import 'cypress-iframe'
-
 class egPage {
     elements = {
         nameInput: () => cy.get('#name'),
@@ -26,7 +24,7 @@ class egPage {
     }
 
     invokeAlert(fileName) {
-        cy.task('readFileMaybe', fileName).then((textOrNull) => {
+        cy.task('readFile', fileName).then((textOrNull) => {
             expect(textOrNull).to.contains(this.elements.alertText())
             this.elements.nameInput().type(textOrNull)
         })

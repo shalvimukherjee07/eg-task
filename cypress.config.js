@@ -6,7 +6,7 @@ module.exports = defineConfig({
         setupNodeEvents(on, config) {
             // implement node event listeners here
             on('task', {
-                readFileMaybe(filename) {
+                readFile(filename) {
                     if (fs.existsSync(filename)) {
                         return fs.readFileSync(filename, 'utf8')
                     }
@@ -19,9 +19,9 @@ module.exports = defineConfig({
         reporterOptions: {
             charts: true,
             json: true,
+            reportFilename: '[status]_[datetime]-[name]-report',
         },
         testIsolation: false,
-        defaultCommandTimeout: 15000,
         chromeWebSecurity: false,
         env: {
             baseUrl: 'task.html',

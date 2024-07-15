@@ -1,0 +1,218 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 7,
+    "passes": 7,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-07-15T14:09:40.132Z",
+    "end": "2024-07-15T14:09:55.730Z",
+    "duration": 15598,
+    "testsRegistered": 7,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a83c8285-d44d-475b-9941-9a43a21f8e8a",
+      "title": "",
+      "fullFile": "cypress\\e2e\\tests\\eg.cy.js",
+      "file": "cypress\\e2e\\tests\\eg.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ed2eca17-3967-4776-8825-bad54a930932",
+          "title": "Verify easy generator practice page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify selection of option 2 from dropdown",
+              "fullTitle": "Verify easy generator practice page Verify selection of option 2 from dropdown",
+              "timedOut": null,
+              "duration": 8233,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('select').select('Option1').should('have.value', 'option1');",
+              "err": {},
+              "uuid": "4524edd9-6c38-46c4-a6cb-2e4c34d02243",
+              "parentUUID": "ed2eca17-3967-4776-8825-bad54a930932",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify upload image",
+              "fullTitle": "Verify easy generator practice page Verify upload image",
+              "timedOut": null,
+              "duration": 533,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_eg.default.uploadImage('cypress/fixtures/EasyGenerator.png');",
+              "err": {},
+              "uuid": "d09a18bf-f8fe-470d-ad25-77cb178f8056",
+              "parentUUID": "ed2eca17-3967-4776-8825-bad54a930932",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify alert message functionality",
+              "fullTitle": "Verify easy generator practice page Verify alert message functionality",
+              "timedOut": null,
+              "duration": 848,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_eg.default.invokeAlert('cypress/fixtures/alert-text.txt');\n_eg.default.checkAlertMsg('Hello Hello from Easygenerator, share this practice page and share your knowledge');",
+              "err": {},
+              "uuid": "4260cde3-9da9-40ae-b3f6-aeeb6c7368db",
+              "parentUUID": "ed2eca17-3967-4776-8825-bad54a930932",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify show/hide input",
+              "fullTitle": "Verify easy generator practice page Verify show/hide input",
+              "timedOut": null,
+              "duration": 284,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_eg.default.hideInput();\n_eg.default.elements.hideShowInputText().should('not.be.visible');\n_eg.default.showInput();\n_eg.default.elements.hideShowInputText().should('be.visible');",
+              "err": {},
+              "uuid": "9ce654ca-ff27-4046-8959-0873c53b5462",
+              "parentUUID": "ed2eca17-3967-4776-8825-bad54a930932",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify mousehover",
+              "fullTitle": "Verify easy generator practice page Verify mousehover",
+              "timedOut": null,
+              "duration": 68,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_eg.default.checkMouseHover();\n_eg.default.elements.mouseHoverContent().then(el => {\n  const text = el.text().replace(/\\s+/g, '');\n  expect(text).to.eq('TopReload');\n});",
+              "err": {},
+              "uuid": "28f17df2-8fb2-47a2-8c5b-a33799041d34",
+              "parentUUID": "ed2eca17-3967-4776-8825-bad54a930932",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify opening new tab",
+              "fullTitle": "Verify easy generator practice page Verify opening new tab",
+              "timedOut": null,
+              "duration": 136,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_eg.default.openNewTab('#opentab');",
+              "err": {},
+              "uuid": "3134d67b-b454-417b-8e28-45e5e78b8c39",
+              "parentUUID": "ed2eca17-3967-4776-8825-bad54a930932",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify iframe and open first tab",
+              "fullTitle": "Verify easy generator practice page Verify iframe and open first tab",
+              "timedOut": null,
+              "duration": 4609,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_eg.default.verifyIframeAndOpenTab();",
+              "err": {},
+              "uuid": "8fe31861-3c6e-4f0a-8704-4f878f709336",
+              "parentUUID": "ed2eca17-3967-4776-8825-bad54a930932",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4524edd9-6c38-46c4-a6cb-2e4c34d02243",
+            "d09a18bf-f8fe-470d-ad25-77cb178f8056",
+            "4260cde3-9da9-40ae-b3f6-aeeb6c7368db",
+            "9ce654ca-ff27-4046-8959-0873c53b5462",
+            "28f17df2-8fb2-47a2-8c5b-a33799041d34",
+            "3134d67b-b454-417b-8e28-45e5e78b8c39",
+            "8fe31861-3c6e-4f0a-8704-4f878f709336"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 14711,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "[status]_[datetime]-[name]-report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "json": true,
+        "reportFilename": "[status]_[datetime]-[name]-report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
