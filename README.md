@@ -1,4 +1,4 @@
-## Project UI Automation for Automation Test Store Website
+## Project UI Automation for EG Task HTML
 
 **Framework Details**
 
